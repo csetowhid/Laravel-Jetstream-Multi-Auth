@@ -193,6 +193,7 @@ Copy Paste In
     use App\Actions\Fortify\AttemptToAuthenticate;
     use App\Actions\Fortify\RedirectIfTwoFactorAuthenticatable;
     use App\Http\Controllers\AdminController;
+    use Illuminate\Support\Facades\Auth;
 
     public function register()
     {
