@@ -504,6 +504,17 @@ and Paste it `app\Http\Responses\LoginResponse.php`
     }
     }
 
+## Redirects To Login After Logout
+Go to `vendor\laravel\fortify\src\Http\Responses\LogoutResponse.php`
+Change in 
+
+    public function toResponse($request)
+    {
+        return $request->wantsJson()
+                    ? new JsonResponse('', 204)
+                    : redirect(Fortify::redirects('logout', '/login'));
+    }
+
 
 # Login Details
 
