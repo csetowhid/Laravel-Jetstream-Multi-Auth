@@ -483,7 +483,7 @@ Copy All From `vendor\laravel\fortify\src\Http\Responses\LoginResponse.php`
 and Paste it `app\Http\Responses\LoginResponse.php`
 
 
-    namespace Laravel\Fortify\Http\Responses;
+    namespace App\Http\Responses;
 
     use Laravel\Fortify\Contracts\LoginResponse as LoginResponseContract;
     use Laravel\Fortify\Fortify;
